@@ -1,3 +1,4 @@
+import { User } from './../Entities/user';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,10 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./signup.page.scss'],
 })
 export class SignupPage implements OnInit {
+  myUser: User;
 
-  constructor() { }
-
-  ngOnInit() {
+  constructor() {
+    this.myUser = new User();
   }
 
+  ngOnInit() {}
 }

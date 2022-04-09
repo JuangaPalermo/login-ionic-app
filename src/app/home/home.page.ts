@@ -1,3 +1,4 @@
+import { User } from './../Entities/user';
 import { Component } from '@angular/core';
 
 @Component({
@@ -6,7 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
+  myUser = new User();
 
-  constructor() {}
-
+  constructor() {
+    this.myUser = new User();
+  }
 }
